@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+p{
+   /* border: 2px solid blue; */
+    margin: 1rem 0;
+    color: #fff;
+}
+h1{
+    outline: 2px solid white;
+    color: #00ff99;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    margin: 0;
+    padding-left: 1rem;
+}
+.green-text{
+    color: #00ff99;
+}
+
+.co{
+    font-weight: 300;
+}
+.white-text{
+    font-weight: 600;
+}
+
+.intro{
+    background-image: url('../images/takahiro-taguchi-7UNPGP32KZQ-unsplash.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales p{
+    color: #444;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.middle{
+    text-align: center;
+    padding: 10vh 0;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.sales{
+    flex-basis: 30%;
+}
+
+footer{
+    background-color: #444;
+    background-image: url('../images/damir-kopezhanov-VM1Voswbs0A-unsplash.jpg');
+    background-blend-mode: soft-light;
+    background-size: 50vw;
+    padding: 8vh 0;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta h2{
+    color: whitesmoke;
+}
+
+.cta p{
+    color: rgb(229, 226, 226);
+}
+
+.cta{
+    flex-basis: 40%;
+    margin: 0 2vw;
+    text-align: justify;
+}
+
+.btn{
+    border: none;
+    background-color: #00ff99;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 9rem;
+}
+
+@media (max-width: 600px) {
+        .middle{
+            flex-direction: column;
+            padding: 5vh 2vw;
+        }
+        .sales{
+            margin-bottom: 1rem;
+        }
+        footer{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .cta{
+            flex-basis: 100%;
+        }
+        .intro{
+            height: 50vh;
+        }
+        h1{
+            font-size: 2.3rem; 
+        }        
+    }
+       
+}
+
+

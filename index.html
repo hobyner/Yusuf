@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Flex</title>
+</head>
+<body>
+<div class="container">
+	<div class="img"><img src="uac.gif" /></div>
+    <!-- Navigation menu -->
+    <div class="topnav">
+    	<a class="active" href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        	<div class="search-container">
+                <form name="search" action="" method="get">
+                <input class="input" type="text" name="search" placeholder="Search"><button type="submit" class="btn">Search</button>
+                </form>
+			</div>
+      </div>
+    <!-- Flex container -->
+		<div class="flex-container">
+        	<div class="flex-item flex-item-1">
+            	<form name="login" action="" method="post">
+                <input class="input" type="text" name="email" placeholder="Email">
+                <br />
+                <input class="input" name="password" type="password" placeholder="Password">
+                <br />
+                <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+            <div class="flex-item flex-item-2">
+            	<h2 style="color:#fff; font-weight:bold;">TIMELINE</h2><br />
+                	<div  class="static">
+                		<img src="folder.png" /><br>Static
+               		</div>
+                	<div class="relative">
+                		<img src="folder.png" /><br>relative
+                	</div>
+                	<div class="absolute">
+                		<img src="folder.png" /><br>absolute
+                    </div>
+                    <div class="fixed">
+		                <img src="folder.png" /><br>fixed
+                	</div>
+            </div>
+            <div class="flex-item flex-item-3">
+
+            </div>
+         </div>
+    <!-- Flex container -->
+     </div>
+</body>
+</html>

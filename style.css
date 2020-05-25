@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+.flex-container {
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+	}
+	
+	.flex-item {
+		background-color:#A7A6A6;
+		margin:10px;
+		padding:10px;
+		min-height:600px;
+		}
+	
+	.flex-item-1 {
+		flex-grow:0;
+	}
+	
+	.flex-item-2 {
+		flex-grow:2;
+		z-index:1;
+		/* flex-basis:300px; */
+	}
+		
+	.flex-item-3 {
+		flex-grow:1;
+	}
+	
+	.input {
+		border:1px solid #FFFFFF;
+		border-radius:3px;
+		padding:5px;
+		font-size:16px;
+		margin:10px;
+	}
+	
+	.btn {
+		background-color:#B081FC;
+		color:#000;
+		border-radius:3px;
+		border: 1px solid #006699;
+		font-size:16px;
+		padding:5px;
+		margin:10px;
+	}
+	
+	.img {
+		margin:10px 0px 0px 10px;
+	}
+	
+	.topnav {
+		overflow: hidden;
+		background-color: #FDA99D;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index:3;
+	}
+	
+	.topnav a {
+		float: left;
+		display:block;
+		color:black;
+		text-align:center;
+		padding:15px;
+		font-size:14px;
+		font-weight:bold;
+		text-decoration:none;
+		
+	}
+	
+	.topnav a:hover {
+		background-color:#F00E12;
+		color: white;
+	}
+	
+	.topnav a.active {
+		background-color:#F00E12;
+		color: white;
+	}
+	
+	.topnav .search-container {
+		float:right;
+	}
+	
+	.topnav input[type=text] {
+		padding: 5px;
+		margin-top: 11px;
+		font-size:14px;
+		border:none;
+	}
+	
+	.topnav .search-container button {
+		float: right;
+		padding:5px;
+		margin-top: 11px;
+		margin-right:15px;
+		font-size: 14px;
+		border: none;
+		cursor: pointer;
+		background-color: #fff;
+		font-weight:bold;
+	}
+	
+		.topnav .search-container button:hover {
+			background-color:#F00E12;
+			color:#fff;
+		}
+		
+	@media screen and (max-width: 600px) {
+		.topnav .search-container {
+			float: none;
+		}
+		
+		.topnav a, .topnav input[type=text], .topnav .search-container button {
+		float:none;
+		display:block;
+		text-align: left;
+		width: 100%;
+		padding: 10px;
+		margin: 0;
+		}
+		
+		.topnav input[type=text] {
+			border: 1px solid #ccc;
+		}
+	}
+	
+	.flex-item img {
+		width:100px;
+	}
+	
+	.static {
+		position: static;
+	}
+	
+	.relative {
+		position:relative;
+		right:200px;
+		top:100px;
+		z-index:-2;
+	}
+	
+	.absolute {
+		position:absolute;
+		top:400px;
+		z-index:-1;
+	}
+	
+	.fixed {
+		position:fixed;
+		left:500px;
+		top:300px;
+	}
+	
